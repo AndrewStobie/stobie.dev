@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'DankMono';
+    src: url('../fonts/DankMono-Regular.otf') format('opentype'),
+         url('../fonts/on-air-inline-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GoMono';
+    src: url('../fonts/Go Mono Nerd Font Complete Mono.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OperatorMono';
+    src: url('../fonts/OperatorMonoLig-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+  --oranje-color: #F8b981;
+  --lavender-color: #c3c3F0;
+  --monoSlate-color: #817283;
+  --sleepingPanther-color: #121F1c;
+  --hotBurntOranje-color:  hsla(27,80%,50%,0.8);
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+  background: url('../img/Stobie-dev.jpg') no-repeat center 45% fixed, radial-gradient(ellipse, var(--lavender-color) 35%, var(--monoSlate-color) 55%, var(--sleepingPanther-color) 80%) center center no-repeat;
+  -webkit-background-size: 40% 100%, cover;
+  -moz-background-size: 40% 100%, cover;
+  -o-background-size: 40% 100%, cover;
+  background-size: 40% 100%, cover;
+
+  overflow: hidden;
+}
+
+.main {
+}
+
+.main:before {
+  font-family: Georgia, arial, sans-serif;
+  font-size: 32px;
+  line-height: 1.05;
+  letter-spacing: 0px;
+  font-weight: 600;
+  word-spacing: 0.85px;
+}
+
+.titleWrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.title {
+
+}
+
+.title {
+  font-family: 'DankMono', 'OperatorMono', 'GoMono';
+  font-size: 2em;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: 0px;
+  word-spacing: -2px;
+
+  width: 40%;
+  text-align: center;
+
+  margin: .25em .5em .5em;
+  padding: .75em 0;
+
+  border-bottom: var(--lavender-color) 3px outset;
+
+  color: var(--oranje-color);
+  text-shadow: -1px 0 var(--monoSlate-color), 0 1px var(--monoSlate-color), 1px 0 var(--monoSlate-color), 0 -1px var(--monoSlate-color), 2px 2px 16px var(--hotBurntOranje-color), 2px 2px 4px var(--lavender-color);
+
+  /* text-align: center; */
+}
+
+.title:before {
+  font-family: Georgia, arial, sans-serif;
+  font-size: 32px;
+  line-height: 1.05;
+  letter-spacing: 0px;
+  font-weight: 600;
+  word-spacing: 0.85px;
+}
+
