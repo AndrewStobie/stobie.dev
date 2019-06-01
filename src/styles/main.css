@@ -26,30 +26,26 @@
   --monoSlate-color: #817283;
   --sleepingPanther-color: #121F1c;
   --hotBurntOranje-color:  hsla(27,80%,50%,0.8);
+
+
+  --screen-xs: (min-width: 0px),
+  --screen-sm: (min-width: 576px),
+  --screen-md: (min-width: 768px),
+  --screen-lg: (min-width: 960px),
+  --screen-xl: (min-width: 1200px),
+  --screen-xxl: (min-width: 1600px),
 }
 
 html {
   height: 100vh;
   width: 100vw;
-  background: url('../img/Stobie-dev.jpg') no-repeat center 45% fixed, radial-gradient(ellipse, var(--lavender-color) 35%, var(--monoSlate-color) 55%, var(--sleepingPanther-color) 80%) center center no-repeat;
-  -webkit-background-size: 40% 100%, cover;
-  -moz-background-size: 40% 100%, cover;
-  -o-background-size: 40% 100%, cover;
-  background-size: 40% 100%, cover;
+  background: radial-gradient(ellipse, var(--lavender-color) 35%, var(--monoSlate-color) 55%, var(--sleepingPanther-color) 80%) center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
   overflow: hidden;
-}
-
-.main {
-}
-
-.main:before {
-  font-family: Georgia, arial, sans-serif;
-  font-size: 32px;
-  line-height: 1.05;
-  letter-spacing: 0px;
-  font-weight: 600;
-  word-spacing: 0.85px;
 }
 
 .titleWrapper {
@@ -57,10 +53,6 @@ html {
   justify-content: space-around;
   align-items: center;
   align-content: center;
-}
-
-.title {
-
 }
 
 .title {
@@ -81,16 +73,58 @@ html {
 
   color: var(--oranje-color);
   text-shadow: -1px 0 var(--monoSlate-color), 0 1px var(--monoSlate-color), 1px 0 var(--monoSlate-color), 0 -1px var(--monoSlate-color), 2px 2px 16px var(--hotBurntOranje-color), 2px 2px 4px var(--lavender-color);
-
-  /* text-align: center; */
 }
 
 .title:before {
   font-family: Georgia, arial, sans-serif;
-  font-size: 32px;
+  font-size: 2em;
   line-height: 1.05;
   letter-spacing: 0px;
   font-weight: 600;
   word-spacing: 0.85px;
 }
 
+@media (min-width: 0px) {
+  .title {
+    width: 80%;
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 576px) {
+  .title {
+    width: 60%;
+    font-size: 1.45em;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    width: 50%;
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 960px) {
+  .title {
+    width: 40%;
+    font-size: 1.75em;
+  }
+}
+
+@media  (min-width: 1200px) {
+  .title {
+    font-size: 2em;
+  }
+}
+
+.logo {
+  max-height: 90%;
+  max-width: 90%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
